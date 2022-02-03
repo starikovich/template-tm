@@ -1,0 +1,59 @@
+$border-radius: 20px;
+$border-radius-top-l-r: 20px 20px 0 0;
+$border-radius-left-t-b: 20px 0 0 20px;
+$font-size-title: 27px;
+$font-size-subtitle: 15px;
+$font-size-description: 18px;
+$margin-bottom-section: 55px;
+$margin-bottom-content: 30px;
+$padding-content: 35px;
+$padding-aside: 30px;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1290px;
+    padding: 0;
+    margin: 0 auto;
+}
