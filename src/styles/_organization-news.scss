@@ -1,0 +1,123 @@
+.organization {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__news {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 415px);
+        margin-right: 25px;
+
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &-card {
+            display: flex;
+            width: 100%;
+            margin-bottom: 36px;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+
+            &:nth-child(2) {
+                margin-right: 36px;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                flex-direction: column;
+                width: calc(100% / 2 - 18px);
+
+                .organization__news-card__img {
+                    height: 215px;
+                    min-height: 215px;
+                }
+
+                .organization__news-card__img-icon {
+                    object-fit: cover;
+                    border-radius: $border-radius $border-radius 0 0;
+                }
+
+                .organization__news-card__description {
+                    padding: 20px;
+                }
+
+                .organization__news-card__description-title {
+                    font-size: 18px;
+                }
+            }
+
+            &__img {
+                width: 410px;
+                min-width: 410px;
+                height: 318px;
+                min-height: 318px;
+
+                &-icon {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    border-radius: $border-radius 0 0 $border-radius;
+                }
+            }
+
+            &__description {
+                padding: 30px;
+
+                &-title {
+                    font-size: 27px;
+                    line-height: 120%;
+                    color: $color-title;
+                }
+
+                &-publish-date {
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $color-subtitle;
+                }
+
+                &-text {
+                    font-size: 15px;
+                    line-height: 135%;
+                    color: $color-description;
+                }
+
+                &-link {
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $color-link;
+                }
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            padding: 18px 28px;
+            font-size: 17px;
+            line-height: 110%;
+            color: #3f8fd2;
+            text-align: center;
+            border-radius: $border-radius-btn;
+            box-shadow: $box-shadow;
+        }
+    }
+
+    &__asaid {
+        width: calc(100% - 870px);
+
+        &-university {
+            width: 100%;
+            padding: 30px;
+            margin-top: 30px;
+            border: 1px solid $color-white;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+        }
+    }
+}

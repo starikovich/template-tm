@@ -1,0 +1,48 @@
+.organization__supervisor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 199px;
+    padding: 30px;
+    border: 7px solid #3f8fd2;
+    border-radius: $border-radius;
+
+    &-description {
+        &__title {
+            max-width: 202px;
+            font-size: 21px;
+            line-height: 110%;
+            color: $color-title;
+        }
+
+        &__text {
+            max-width: 155px;
+            font-size: 14px;
+            line-height: 110%;
+            color: $color-description;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 110%;
+            color: $color-link;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        right: 6px;
+        bottom: -1px;
+        width: 225px;
+        min-width: 225px;
+        height: 219px;
+        min-height: 219px;
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,2 +1,9 @@
-@import url('./_palette.scss');
-@import url('./_global.scss');
+@import './palette';
+@import './global';
+@import './header';
+@import './events';
+@import './speciality';
+@import './organization-news';
+@import './organization-asaid';
+@import './promo';
+@import './rss';

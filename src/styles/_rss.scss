@@ -1,0 +1,45 @@
+.rss {
+    margin-top: 30px;
+
+    &-fitr,
+    &-vstu {
+        &__header {
+            text-align: center;
+            border-bottom: 4px solid #3f8fd2;
+
+            &-title {
+                padding: 8px 0;
+                font-size: 23px;
+                line-height: 27px;
+                color: $color-title;
+            }
+        }
+
+        &__body {
+            margin: 16px 0;
+        }
+
+        &__card {
+            margin-bottom: 8px;
+
+            &-link {
+                display: inline-block;
+                width: 100%;
+                color: $color-description;
+            }
+
+            &-title {
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+            &-publish-date {
+                padding: 0;
+                margin: 8px 0;
+                font-size: 14px;
+                line-height: 18px;
+                color: $color-subtitle;
+            }
+        }
+    }
+}

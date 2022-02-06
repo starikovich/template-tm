@@ -12,9 +12,8 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
     mode,
-    entry: {
-        main: path.resolve(__dirname, './src/index.js'),
-    },
+    stats: { warnings: false },
+
     output: {
         path: path.resolve(__dirname, './build'),
         filename: '[name].[contenthash].js',
@@ -31,6 +30,12 @@ module.exports = {
         static: path.resolve(__dirname, './src/'),
         hot: true,
         liveReload: true,
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false,
+            },
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({

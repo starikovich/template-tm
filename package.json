@@ -4,7 +4,6 @@
     "description": "",
     "scripts": {
         "start": "set NODE_ENV=development&&webpack serve --open",
-        "dev": "set NODE_ENV=development&&webpack",
         "build": "set NODE_ENV=production&&webpack"
     },
     "author": "",

@@ -1,0 +1,40 @@
+.speciality {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 170px;
+        background-color: #3f8fd2;
+        border-radius: $border-radius $border-radius 0 0;
+    }
+
+    &__description {
+        padding: 38px 43px;
+
+        &-title {
+            font-size: 30px;
+            line-height: 110%;
+            color: $color-white;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 135%;
+            color: $color-white;
+        }
+
+        &-logo {
+            position: relative;
+            width: 662px;
+            height: 170px;
+
+            &__img {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
