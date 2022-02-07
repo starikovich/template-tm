@@ -1,0 +1,65 @@
+.about {
+    padding: 60px 0;
+    background-color: $bg-dark;
+    border-bottom: 1px solid #495471;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+
+        &__logo {
+                width: 278px;
+                min-width: 278px;
+                height: 116px;
+                max-height: 116px;
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__history {
+            font-size: 16px;
+            line-height: 153%;
+            color: $color-white-grey;
+        }
+
+        &__contacts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-phone,
+            &-email {
+                position: relative;
+                font-size: 16px;
+                line-height: 132%;
+                color: $color-white;
+
+                &::before{
+                    position: relative;
+                    right: 5px;
+                    bottom: -5px;
+                    width: 11px;
+                    height: 18px;
+                }
+            }
+            &-phone {
+                &::before {
+                    content: url('../images/icon-phone.svg');
+                }
+            }
+            &-email {
+                &::before {
+                    content: url('../images/icon-mail.svg');
+                }
+            }
+        }
+    }
+}
