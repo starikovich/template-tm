@@ -1,24 +1,31 @@
 .about {
     padding: 60px 0;
     background-color: $bg-dark;
-    border-bottom: 1px solid #495471;
 
     &-wrapper {
         display: flex;
         justify-content: space-between;
     }
 
+    &-item {
+        max-width: 320px;
+        min-height: 330px;
+        overflow: hidden;
+        border-bottom: $border-content-dark;
+    }
+
     &-info {
         display: flex;
         flex-direction: column;
-        max-width: 320px;
+        max-width: 360px;
 
         &__logo {
-                width: 278px;
-                min-width: 278px;
-                height: 116px;
-                max-height: 116px;
-            &-img{
+            width: 278px;
+            min-width: 278px;
+            height: 116px;
+            max-height: 116px;
+
+            &-img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
@@ -33,28 +40,32 @@
 
         &__contacts {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+
             &-phone,
             &-email {
                 position: relative;
+                padding-left: 5px;
                 font-size: 16px;
                 line-height: 132%;
                 color: $color-white;
 
-                &::before{
+                &::before {
                     position: relative;
-                    right: 5px;
                     bottom: -5px;
+                    left: -5px;
                     width: 11px;
                     height: 18px;
                 }
             }
+
             &-phone {
                 &::before {
                     content: url('../images/icon-phone.svg');
                 }
             }
+
             &-email {
                 &::before {
                     content: url('../images/icon-mail.svg');

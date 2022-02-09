@@ -8,11 +8,20 @@
         justify-content: space-between;
     }
 
+    &-card {
+        min-height: 230px;
+    }
+
     &-copyright {
         max-width: 227px;
-        margin: 0;
-        font-size: 14px;
-        line-height: 153%;
-        color: $color-copyright;
+        overflow: hidden;
+        border-bottom: $border-content-dark;
+
+        &__text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 153%;
+            color: $color-copyright;
+        }
     }
 }

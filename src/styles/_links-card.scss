@@ -1,4 +1,8 @@
 .links-card {
+    min-height: 330px;
+    overflow: hidden;
+    border-bottom: $border-content-dark;
+
     &__title {
         font-size: 20px;
         line-height: 23px;
