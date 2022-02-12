@@ -75,4 +75,71 @@
             }
         }
     }
+
+    @media (max-width: 575.98px) {
+        &__inner {
+            padding: 10px 30px;
+        }
+
+        &__top-block {
+            &__menu {
+                display: none;
+            }
+        }
+
+        &__bottom-block {
+            padding: 0;
+
+            &__logo {
+                width: 225px;
+            }
+
+            &__menu {
+                position: absolute;
+                top: 68px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 6;
+                display: none;
+                width: 100%;
+                height: 50vh;
+                padding: 0;
+                margin: 0;
+                background-color: $bg-dark;
+
+                &-wrapper {
+                    flex-direction: column;
+                    padding: 0 30px;
+                    margin-top: 60px;
+                }
+
+                &-item {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+
+                &-link {
+                    display: inline-block;
+                    width: 100%;
+                    color: $color-white-grey;
+                }
+
+                &-burger {
+                    position: relative;
+                    z-index: 6;
+                    width: 30px;
+                    height: 18px;
+                    background-image: url('../images/icon-burger.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
