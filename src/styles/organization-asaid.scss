@@ -45,4 +45,35 @@
             object-fit: cover;
         }
     }
+
+    @media (max-width: 575.98px) {
+        padding: 10px;
+
+        &-description {
+            &__title {
+                max-width: 180px;
+                font-size: 20px;
+                line-height: 120%;
+            }
+
+            &__text {
+                max-width: 143px;
+            }
+
+            &__link {
+                color: $color-link;
+            }
+        }
+
+        &-img {
+            right: 0;
+            bottom: 0;
+            width: 140px;
+            min-width: 140px;
+
+            &__icon {
+                border-radius: 0 0 13px;
+            }
+        }
+    }
 }

@@ -37,4 +37,35 @@
             }
         }
     }
+
+    @media (max-width: 575.98px) {
+        &__wrapper {
+            padding: 30px;
+            border-radius: 0;
+        }
+
+        &__description {
+            position: relative;
+            z-index: 2;
+            padding: 0;
+
+            &-title {
+                font-size: 20px;
+                line-height: 110%;
+            }
+
+            &-text {
+                font-size: 15px;
+                line-height: 110%;
+            }
+
+            &-logo {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                width: 100%;
+            }
+        }
+    }
 }

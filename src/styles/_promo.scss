@@ -17,4 +17,14 @@
         border-radius: $border-radius;
         box-shadow: $box-shadow;
     }
+
+    @media (max-width: 575.98px) {
+        &-title {
+            text-align: center;
+        }
+
+        &-video {
+            width: 100%;
+        }
+    }
 }
