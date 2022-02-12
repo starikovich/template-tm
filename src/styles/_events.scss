@@ -62,5 +62,52 @@
                 }
             }
         }
+
+        @media (max-width: 575.98px) {
+            flex-wrap: wrap;
+            border-radius: 0;
+
+            &-img {
+                width: 100%;
+                min-width: inherit;
+                height: 443px;
+                min-height: 443px;
+                border-radius: 0;
+
+                &__icon {
+                    border-radius: 0;
+                    object-fit: cover;
+                }
+            }
+
+            &-description {
+                align-items: center;
+                padding: 30px;
+
+                &__title {
+                    font-size: 28px;
+                    line-height: 120%;
+                }
+
+                &__text {
+                    font-size: 18px;
+                    line-height: 135%;
+                }
+
+                &__link {
+                    display: block;
+                    width: 100%;
+                    padding: 5% 10%;
+                    color: $color-white;
+                    text-align: center;
+                    background-color: $color-link;
+                    border-radius: $border-radius;
+                }
+
+                &__slider-switch {
+                    bottom: 10px;
+                }
+            }
+        }
     }
 }
