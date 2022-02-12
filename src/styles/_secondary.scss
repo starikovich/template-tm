@@ -1,27 +1,45 @@
 .secondary {
-    padding: 40px 0;
     background-color: $bg-dark;
 
     &-wrapper {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        padding-bottom: 40px;
+        border-bottom: $border-content-dark;
     }
 
-    &-card {
-        min-height: 230px;
+    &-item {
+        max-width: 370px;
     }
 
     &-copyright {
         max-width: 227px;
         overflow: hidden;
-        border-bottom: $border-content-dark;
 
         &__text {
             margin: 0;
             font-size: 14px;
             line-height: 153%;
             color: $color-copyright;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        &-wrapper {
+            flex-direction: column;
+            padding: 0 30px;
+        }
+
+        &-item {
+            padding: 30px 0;
+        }
+
+        &-copyright {
+            max-width: inherit;
+
+            &__text {
+                text-align: center;
+            }
         }
     }
 }

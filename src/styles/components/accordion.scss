@@ -36,4 +36,42 @@
             }
         }
     }
+
+    @media (max-width: 575.98px) {
+        &-item {
+            &__title {
+                position: relative;
+                padding: 20px 30px;
+                background-color: $bg-dark-lighter;
+                border-radius: 5px;
+
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    right: 30px;
+                    display: block;
+                    content: url('../images/icon-acordeon-arrow-top.svg');
+                    transform: translateY(-50%);
+                }
+            }
+
+            &__content {
+                display: none;
+                padding: 0 20px;
+            }
+
+            &__trigger {
+                &:checked ~ .accordion-item__content {
+                    display: block;
+                    color: rebeccapurple;
+                }
+
+                &:checked ~ .accordion-item__title {
+                    &::after {
+                        content: url('../images/icon-acordeon-arrow-bott.svg');
+                    }
+                }
+            }
+        }
+    }
 }

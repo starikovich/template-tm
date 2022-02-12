@@ -1,0 +1,35 @@
+.partners {
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0;
+    }
+
+    &-link {
+        display: block;
+        width: inherit;
+        height: 42px;
+    }
+
+    &-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 575.98px) {
+        &-wrapper {
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        &-link {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

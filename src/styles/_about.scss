@@ -9,7 +9,7 @@
 
     &-item {
         max-width: 320px;
-        min-height: 330px;
+        min-height: 370px;
         overflow: hidden;
         border-bottom: $border-content-dark;
     }
@@ -69,6 +69,45 @@
             &-email {
                 &::before {
                     content: url('../images/icon-mail.svg');
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 30px 0 0;
+
+        &-wrapper {
+            flex-direction: column;
+            padding: 0 30px;
+        }
+
+        &-item {
+            max-width: inherit;
+            min-height: inherit;
+            padding: 30px 0;
+            border-bottom: none;
+        }
+
+        &-info {
+            width: 100%;
+
+            &__logo {
+                width: 100%;
+            }
+
+            &__history {
+                margin: 10px 0;
+
+                &-text {
+                    text-align: center;
+                }
+            }
+
+            &__contacts {
+                &-phone,
+                &-email {
+                    font-size: 15px;
                 }
             }
         }
