@@ -50,6 +50,10 @@ module.exports = {
             template: path.resolve(__dirname, './src/pages/category.html'),
             filename: 'category.html',
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/pages/staff.html'),
+            filename: 'staff.html',
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
         }),
