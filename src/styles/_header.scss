@@ -50,6 +50,10 @@
         }
 
         &__menu {
+            &-burger {
+                display: none;
+            }
+
             &-wrapper {
                 display: flex;
                 align-items: center;
@@ -128,6 +132,7 @@
                 &-burger {
                     position: relative;
                     z-index: 6;
+                    display: block;
                     width: 30px;
                     height: 18px;
                     background-image: url('../images/icon-burger.svg');
